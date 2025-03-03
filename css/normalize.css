@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+
+    line-height: 28px;
+    color: var(--text-color);
+    font-family: 'Prata', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    background-color: var(--color-g);
+}
+
+main {
+    display: block;
+}
+
+figcaption {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+    font: inherit;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: Arial, 'Prata', sans-serif;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+img {
+    border-style: none;
+    object-fit: cover;
+}
+
+svg {
+    max-width: 100%;
+    height: 100%;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    cursor: pointer;
+}
+
+button,
+input {
+    overflow: visible;
+    outline: none;
+    background: none;
+    border: none;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+blockquote,
+figure {
+    margin: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+.main {
+    background-color: var(--color-g);
+}
+
+.container {
+    max-width: 100%;
+    padding-top: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.button {
+    background: var(--text-color);
+    border-radius: 4px;
+}
+
+.button:hover,
+.kinds__button:hover,
+.form-choice__button:hover {
+    background: #797978;
+    transition: all .4s ease-in-out;
+    border: 1px solid var(--color-y);
+}
+
+.btn {
+    color: var(--color-primary);
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+}
+
+.logo__link:hover,
+.footer__link:hover,
+.social__link:hover {
+    color: #797978;
+    transition: all .4s ease-in-out;
+}
+
+.menu__link:hover,
+.submenu__item:hover {
+    transition: all .4s ease-in-out;
+    background: var(--color-n);
+    width: 100%;
+}
+
+.form-choice__input:hover {
+    border: 1px solid var(--color-a);
+    transition: 0.8s;
+}
+
+.form-choice__input:focus {
+    border: 3px solid var(--color-primary);
+    background: var(--color-m);
+    transition: 0.8s;
+}
+
+:root {
+    --color-primary: #222222;
+    --text-color: #FFFFFF;
+    --color-g: #282829;
+    --color-f: #333333;
+    --color-a: #55565A;
+    --color-n: #D5C9BE;
+    --color-m: #D6D6D6;
+    --color-l: #E5E5E5;
+    --color-y: #2A2C3F;
+    --color-x: #38535d;
+    --texst-size-a: calc(35px + 45 * (100vw / 1440));
+    /*80px*/
+    --texst-size-b: calc(20px + 30 * (100vw / 1440));
+    /*50*/
+    --texst-size-c: calc(13px + 3 * (100vw / 1440));
+    /*16*/
+    --texst-size-d: calc(20px + 16 * (100vw / 1440));
+    /*36*/
+    --texst-size-i: calc(18px + 22 * (100vw / 1440));
+    /*40*/
+    --texst-size-f: calc(22px + 32 * (100vw / 1440));
+    /* 54*/
+    --texst-size-k: calc(20px + 4 * (100vw / 1440));
+    /*24*/
+    --texst-size-l: calc(10px + 9 * (100vw / 1440));
+    /*19*/
+    --texst-size-m: calc(16px + 4 * (100vw / 1440));
+    /*20*/
+}
+
+@media screen and (max-width: 1350px) {
+    .container {
+        padding-top: 50px;
+    }
+}

@@ -1,0 +1,121 @@
+.footer {
+    background: var(--color-primary);
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+    gap: 1rem;
+    border-top: 2px solid var(--color-n);
+    border-bottom: 2px solid var(--color-n);
+}
+
+.footer__link {
+    color: var(--text-color);
+    font-family: Arial;
+    font-style: italic;
+    font-size: var(--texst-size-m);
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 2rem 7rem;
+}
+
+.footer-contact__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo {
+    background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: beige; stroke-width: 2; stroke-dasharray: 7 10'/></svg>");
+    display: flex;
+    border: none;
+    width: 10rem;
+    height: 2.3rem;
+}
+
+.social__list {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.social__item {
+    height: 1.5rem;
+    background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: beige; stroke-width: 2; stroke-dasharray: 7 10'/></svg>");
+}
+
+.footer__btn {
+    font-size: var(--texst-size-m);
+    font-style: italic;
+}
+
+.footer__copy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__name {
+    color: var(--color-n);
+    font-family: Arial;
+    font-size: var(--texst-size-m);
+    line-height: 150%;
+}
+
+.name {
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 1350px) {
+    .footer__contact {
+        padding: 4vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__list {
+        padding: 0.5rem 0;
+        gap: 0.3rem;
+    }
+    .footer__contact {
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-contact__group {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer__copy {
+        gap: 2vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer__copy {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer__list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
